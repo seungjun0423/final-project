@@ -1,9 +1,9 @@
-const STYLE = {
-  WIDTH: "35em",
-  BORDER_COLOR: "#979797",
-  REST_API: "5c89b503064bdcbc9f2a7f2716b83d9e",
-  REDIRECT_URI: "https://localhost:3000",
-  SERVER: "https://localhost:4000"
-}
-
 export default STYLE
+const BASE_URL = "http://localhost:3000";
+const REST_API_KEY = "보안이슈로 discord에 공유한 걸로 사용하세요";
+const REDIRECT_URI = "http://localhost:3000";
+
+export const API = {
+  MAIN: `${BASE_URL}/main`, // 예시
+  KAKAO_AUTH_URL: `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`
+};

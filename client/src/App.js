@@ -21,6 +21,11 @@ import PostFeedback from "./Components/Pages/PostFeedback";
 import Mypage from "./Components/Pages/Mypage";
 import UserInfo from "./Components/Pages/UserInfo";
 import Menu from "./Components/Pages/Menu"
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+
+// Page
+import Welcome from "./OAuth/Welcome";
+import Loding from "./OAuth/Loding";
 
 function App() {
 
@@ -80,6 +85,11 @@ function App() {
         <Route path="/menu" element={<Menu />}></Route>
       </Routes>
     </Router>
+      <Routes>
+        <Route path="/" element={<Welcome />}></Route>
+        <Route path="/oauth/callback/kakao" element={<Loding />}></Route>
+      </Routes>
+  </Router>
   );
 }
 
