@@ -22,7 +22,7 @@ function ProfilePicture({img}) {
   const user = useSelector((state)=>state.auth.user_info.nickname)
 
   return(
-    <Link to={`/mypage/${user}`}>
+    <Link to={`/user/${user}`}>
         <Picture img={img} ></Picture>
     </Link>
   )

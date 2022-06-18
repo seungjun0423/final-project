@@ -25,6 +25,7 @@ import UserInfo from "./Components/Pages/UserInfo";
 import EditOhwunwan from './Components/Pages/EditOhwunwan.js';
 import EditFeedback from './Components/Pages/EditFeedback.js';
 import Edit1rm from './Components/Pages/Edit1rm.js';
+import OtherUser from './Components/Pages/OtherUsers.js';
 
 function App() {
   // store에서 state를 가져온다
@@ -89,6 +90,7 @@ function App() {
 
         <Route path="/user" element={is_login ?<Mypage />:<Welcome />}></Route>
         <Route path="/userinfo" element={is_login ?<UserInfo />:<Welcome />}></Route>
+        <Route path="/user" element={is_login ?<OtherUser />:<Welcome />}></Route>
       </Routes>
     </Router>
   );

@@ -128,7 +128,7 @@ const CommentSelect = styled.div`
   border: 0.1em solid #2DA44E;
 `
 
-function Mypage() {
+function OtherUser() {
   // 메뉴 열고 닫기
   const [contentMenu, setContentMenu] = useState(false)
   const [commentMenu, setCommentMenu] = useState(false)
@@ -1024,4 +1024,4 @@ const feedbackCommentInfoHandler = (value) => {
   )
 }
 
-export default Mypage
+export default OtherUser
