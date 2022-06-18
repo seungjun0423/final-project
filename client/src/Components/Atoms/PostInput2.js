@@ -12,7 +12,7 @@ const Input = styled.input`
 
 function PostInput2({weightHandler,editWeight}) {
   return (
-    <Input type='text' defaultValue={editWeight? editWeight:''} onChange={(e)=>{weightHandler(e.target.value)}}></Input>
+    <Input type='text' value={editWeight? editWeight:''} onChange={(e)=>{weightHandler(e.target.value)}}></Input>
   )
 }
 
